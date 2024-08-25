@@ -1,0 +1,156 @@
+/* Общие стили для текста */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+/* Подключение шрифта для заголовков и определенных текстов */
+h2, .project-link, .detail strong {
+    font-family: 'Yeseva One', cursive;
+    color: #e0bd6d; /* Цвет для указанных текстов */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 1171px; /* Ширина контейнера */
+    height: 552.28px; /* Высота контейнера */
+    border: 2px solid transparent; /* Убрана цветная рамка */
+}
+
+.text-section {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.text-section h2 {
+    font-size: 27px; /* Уменьшен размер текста заголовка до 27px */
+    margin-bottom: 1rem;
+    font-family: 'Yeseva One', cursive;
+    max-width: 300px; /* Ограничиваем ширину заголовка, чтобы он отображался в две строки */
+    line-height: 1.2; /* Регулируем межстрочный интервал */
+    word-wrap: break-word; /* Перенос слов для отображения в две строки */
+}
+
+.text-section p {
+    margin-bottom: 2rem;
+    font-size: 14px; /* Устанавливаем размер текста в 14px */
+    line-height: 1.5; /* Регулируем межстрочный интервал для лучшего восприятия текста */
+    max-width: 300px; /* Ограничиваем ширину текста, чтобы он помещался в три строки */
+    word-wrap: break-word; /* Позволяет переносить слова на следующую строку */
+    margin-top: 1rem; /* Добавляем отступ сверху для белого текста */
+}
+
+
+.project-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.detail {
+    font-size: 13px; /* Устанавливаем размер белого текста в 13px */
+    margin-top: 5px; /* Добавляем небольшой отступ сверху для белого текста */
+}
+
+.detail strong {
+    font-family: 'Yeseva One', cursive;
+    color: #e0bd6d; /* Цвет для указанных текстов */
+    display: block; /* Отображаем заголовок как блок, чтобы текст располагался ниже */
+    margin-bottom: 3px; /* Отступ снизу, чтобы белый текст не прилипал к золотому */
+}
+
+.image-section {
+    flex: 1;
+    position: relative;
+    max-width: 679px; /* Ширина блока изображения */
+    height: 482.38px; /* Высота блока изображения */
+}
+
+
+.slides {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.project-titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; /* Увеличиваем отступ снизу */
+    font-size: 1rem;
+}
+
+.project-link {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Yeseva One', cursive;
+}
+
+.project-link.active {
+    color: #e0bd6d;
+    text-decoration: underline; /* Добавляем подчеркивание для активного элемента */
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    padding-left: 40px; /* Сдвигаем навигацию вправо */
+}
+
+.prev, .next {
+    cursor: pointer;
+    font-size: 1.3rem; /* Немного уменьшаем размер стрелок */
+    color: #e0c078; /* Цвет стрелок */
+    padding: 0.5rem;
+    font-weight: bold;
+    margin: 0 20px; /* Добавляем одинаковый отступ слева и справа для стрелок */
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; /* Добавляем отступы для того, чтобы точки располагались по центру */
+}
+
+.dot {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #e0c078;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #ffffff;
+}

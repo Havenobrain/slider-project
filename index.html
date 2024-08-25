@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed Projects</title>
+    
+    <!-- Подключение Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap">
+    
+    <!-- Подключение файла стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Рамка вокруг всего контента -->
+    <div class="frame">
+        <!-- Контейнер слайдера -->
+        <div class="container">
+            <!-- Блок текста и деталей проекта -->
+            <div class="text-section">
+                <h2>COMPLETED PROJECTS</h2>
+                <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                <div class="project-details">
+                    <div class="detail"><strong>CITY:</strong> <span id="city">Rostov-on-Don</span></div>
+                    <div class="detail"><strong>APARTMENT AREA:</strong> <span id="area">81 m2</span></div>
+                    <div class="detail"><strong>REPAIR TIME:</strong> <span id="time">3.5 months</span></div>
+                    <div class="detail"><strong>REPAIR COST:</strong> <span id="cost">Upon request</span></div>
+                </div>
+                <!-- Навигация по слайдам -->
+                <div class="navigation">
+                    <div class="prev">&larr;</div>
+                    <div class="dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <div class="next">&rarr;</div>
+                </div>
+            </div>
+            <!-- Блок с изображениями -->
+            <div class="image-section">
+                <div class="project-titles">
+                    <a href="#" class="project-link active">Rostov-on-Don, Admiral</a>
+                    <a href="#" class="project-link">Sochi Thieves</a>
+                    <a href="#" class="project-link">Rostov-on-Don Patriotic</a>
+                </div>
+                <div class="slides">
+                    <div class="slide active" style="background-image: url('images/image1.jpg');"></div>
+                    <div class="slide" style="background-image: url('images/image2.jpg');"></div>
+                    <div class="slide" style="background-image: url('images/image3.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение файла скриптов -->
+    <script src="script.js"></script>
+</body>
+</html>
